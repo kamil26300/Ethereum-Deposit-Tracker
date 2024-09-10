@@ -14,9 +14,9 @@ function App() {
       setTimeStamp(data.currentTimeStamp);
     };
 
-    // setInterval(() => {
+    setInterval(() => {
     fetchDeposits();
-    // }, deposits.REFRESH_DURATION || 15000);
+    }, deposits.REFRESH_DURATION || 15000);
   }, []);
 
   return (
